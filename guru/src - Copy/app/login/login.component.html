@@ -1,0 +1,15 @@
+<div>
+    <div class="card">
+        <div class="card-body">
+    <form  [formGroup]="login" (ngSubmit)="loginData()">
+    <div class="mb-3">
+        <b>UserName</b> <input class="form-control" placeholder="userName@code.com" style="width: 1005px; float: right; margin-left: 5px;" formControlName="userName"> 
+    </div>
+    <div class="mb-3">
+        <b>password</b> <input class="form-control" placeholder="password" style="width: 1005px; float: right; margin-left: 5px;" formControlName="password"> 
+    </div>
+    <button class="btn btn-success" style="float: right;">Login</button>
+    </form>
+    </div>
+    </div>
+</div>

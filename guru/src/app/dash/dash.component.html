@@ -1,0 +1,47 @@
+<div class="card">
+    <div class="card-body">
+<form  [formGroup]="regForm" (ngSubmit)="onSubmit()">
+<div class="mb-3">
+<b>NAME</b> <input class="form-control" placeholder="last" style="width: 500px; float: right; margin-left: 5px;"> 
+ <input class="form-control" placeholder="first" style="width:500px; float: right;"  formControlName="name">
+</div>
+<div class="mb-3">
+    <b>Choose your UserName</b> <input class="form-control" placeholder="@code.com" style="width: 1005px; float: right; margin-left: 5px;"  formControlName="userName"> 
+</div>
+<div class="mb-3">
+    <b>Choose a password</b> <input class="form-control" placeholder="enter password" style="width: 1005px; float: right; margin-left: 5px;" formControlName="password"> 
+</div>
+<div class="mb-3">
+    <b>Confirm a password</b> <input class="form-control" placeholder="confirm a password" style="width: 1005px; float: right; margin-left: 5px;" formControlName="confirm"> 
+</div>
+<div class="mb-3">
+    <b>Birthday</b> <input class="form-control" placeholder="year" style="width: 340px; float: right; margin-left: 5px;" formControlName="year" > 
+    <input class="form-control" placeholder="date" style="width:330px; float: right;" formControlName="date">
+    <select class="form-control" style="width: 333px; float: right; margin-left: 5px;"formControlName="month">
+        <option value="select" >---select----</option>
+        <option value="january" >january</option>
+        <option value="feb">feb</option>
+        <option value="march">march</option>
+        <option value="april">april</option>
+        <option value="may">may</option>
+        <option value="june">june</option>
+        <option value="july">july</option>
+        <option value="augest">augest</option>
+        <option value="september">september</option>
+        <option value="october">october</option>
+        <option value="novmber">novmber</option>
+        <option value="december">december</option>
+    </select> 
+</div>
+<div class="mb-3">
+    <b>Gender</b> 
+    <select class="form-control" style="width: 1008px; float: right; margin-left: 5px;">
+        <option value="male" >MALE</option>
+        <option value="female">FEMALE</option>
+        <option value="other">other</option>
+        </select>
+</div>
+<button class="btn btn-success" style="float: right;">Register</button>
+</form>
+    </div>
+    </div>
